@@ -39,7 +39,7 @@ class Electro:
         self.ini.mainloop()
     def Generar_Reporte(self):
         self.pantalla_reporte=Toplevel()
-        self.pantalla_reporte.geometry('1100x700')
+        self.pantalla_reporte.geometry('1100x600')
         self.pantalla_reporte.title("Reporte De Ingresos")
         self.pantalla_reporte.resizable(0,0)
         
