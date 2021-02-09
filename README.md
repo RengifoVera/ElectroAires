@@ -7,15 +7,14 @@ crear una factura (no electronica) si no un PDF con los datos del cliente y el e
 se realizo en trabAjo, para tener un formato digital de una factura 
 # Requisitos
 
-TENER INSTALADO POSTGRES SQL VERSION 12 O SUPERIOR  
-TENER INSTALADO PYTHON 3.8 O SUPERIOR
-
+Tener instalado PYTHON 3.8 o superior   
+Tener instalado POSTGRESQL 12 o superior
 
 
 # Dependencias
 
-PARA USAR ESTA APP DEBEMOS USAR ESTE CODIGO  SQL PARA  CREAR ESTAS FILAS EN UN GESTOR DE BASE DE DATOS POSTGRES
-    
+Para usar esta app debemos usar este codigo SQL en POSTGRESQL para crear las tablas necesarias en la base de datos  
+        
 CREATE TABLE ELECTRO
 (   
 FECHA DATE,  
@@ -26,6 +25,6 @@ VALOR NUMERIC,
 VALOR_MATERIALES NUMERIC,   
 ARREGLO TEXT,   
 FECHA_INGRESO DATE,  
-NUEVO_ARREGLO TEXT, 
+NUEVO_ARREGLO TEXT,      
 PRIMARY KEY(PLACA)    
     )   
