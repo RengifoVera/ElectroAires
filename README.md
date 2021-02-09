@@ -12,7 +12,7 @@ Tener instalado POSTGRESQL 12 o superior
 
 
 # Dependencias
-
+En el gestor debemos crear una base de datos llamada ElectroAires asi tal cual con las mayusculas                    
 Para usar esta app debemos usar este codigo SQL en POSTGRESQL para crear las tablas necesarias en la base de datos  
         
 CREATE TABLE ELECTRO
