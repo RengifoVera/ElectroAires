@@ -1,4 +1,4 @@
-from tkinter import Button,LabelFrame,Label,Frame,Entry,Text,Tk,PhotoImage,Toplevel,CENTER
+from tkinter import Button,LabelFrame,Label,Frame,Entry,Text,Tk,PhotoImage,Toplevel,CENTER,END,StringVar
 from tkinter import ttk
 import psycopg2
 from tkcalendar import DateEntry
