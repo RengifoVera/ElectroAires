@@ -21,10 +21,10 @@ CREATE TABLE ELECTRO
         MARCA TEXT,  
         TIPO_CARRO TEXT,        
         PLACA VARCHAR(10),    
-        VALOR NUMERIC,  
-        VALOR_MATERIALES NUMERIC,   
-        ARREGLO TEXT,   
+        VALOR NUMERIC,    
+        ARREGLO TEXT, 
+        VALOR_MATERIALES NUMERIC, 
         FECHA_INGRESO DATE,  
-        NUEVO_ARREGLO TEXT,      
+        ARREGLO_NUEVO TEXT,      
         PRIMARY KEY(PLACA)    
     )   
