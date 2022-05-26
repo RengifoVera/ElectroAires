@@ -1,0 +1,26 @@
+def pantalla_garantia(self,fecha,valor=1000):
+        traba="asdajskjdskasfjfdsaalkñfjlsksjfsasmsocflsfñsfgslcfalfhlerkqrpxerpiopopgokdekgpeoqrifpoerijzxfvpiovperivopoflefeiorfli"
+        self.pant_gara=Toplevel()
+        self.pant_gara.title("Garantia Vehiculo")
+        self.pant_gara.geometry('500x500')
+        self.pant_gara['bg'] = '#0059b3'
+        Label(self.pant_gara,text=('GARANTIA VEHICULOS'),bg="#0059b3",font=('Britannic Bold',25)).pack(side='top',pady=10)
+        
+        frame_garantia=LabelFrame(self.pant_gara)
+        frame_garantia.pack()
+        
+        Label(frame_garantia,text="FECHA DE INGRESO").grid(row=0,column=1)
+        Label(frame_garantia,text=(f"{fecha}"),font=('Arial',12)).grid(row=1,column=1)
+        
+        Label(frame_garantia,text="VALOR COBRADO",font=('Arial',12)).grid(row=2,column=1)
+        Label(frame_garantia,text=(f"${valor}"),font=('Arial',12)).grid(row=3,column=1)
+        
+        Label(frame_garantia,text="TRABAJOS REALIZADOS",font=('Arial',12)).grid(row=3,column=1)
+        Label(frame_garantia,text=(f"${traba}"),height=20,font=('Arial',12)).grid(row=4,column=1)
+
+                #FRAME GARANTIA
+        frame_garantia=LabelFrame(self.pant_reg)
+        frame_garantia.place(x=665,y=480)
+        btn_garantia=Button(frame_garantia,text=('GARANTIAS'),font=('Britannic Bold',25),command=lambda:self.pantalla_garantia(fecha))
+        btn_garantia.grid(row=1,column=0,ipadx=120,ipady=50)
+        

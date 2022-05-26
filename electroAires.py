@@ -330,6 +330,7 @@ class Electro:
         #limpia entrada de texto de busqueda
         def limpiar(event):
            event.widget.delete(0,END)
+           
         entra_buscarPlaca.insert(0,"Ingrese Placa...")
         entra_buscarPlaca.bind("<Button-1>",limpiar)
         def buscar_placa(placa):
@@ -371,7 +372,7 @@ class Electro:
 
 
         style = ttk.Style(frame_buscar)
-        style.configure('Treeview', rowheight=30)
+        style.configure('Treeview')
 
         Tabla_Datos=ttk.Treeview(frame_buscar,columns=[f"#{n}" for n in range(0,8)])
         Tabla_Datos.grid(row=4,column=0,columnspan=10,pady=25)
