@@ -2,7 +2,6 @@
 import re
 from tkinter import W, StringVar, Text, NW, Button, LabelFrame, Label, Frame, Entry, Text, Tk, Toplevel, CENTER, END, CENTER, font, messagebox as mb
 from turtle import width
-import psycopg2
 from tkcalendar import DateEntry
 from tkinter import ttk
 
